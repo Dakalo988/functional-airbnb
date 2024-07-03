@@ -1,45 +1,28 @@
-import React from 'react';
-import './Header.css';
-import { IconButton } from '@mui/material';
-import { Search, Menu, Public, AccountCircle } from '@mui/icons-material';
+import React from "react";
+import LanguageIcon from "@mui/icons-material/Language";
+import MenuIcon from "@mui/icons-material/Menu";
+import { Avatar } from "@mui/material";
+import "./Header.css";
 
 const Header = () => {
   return (
-    <header className="header">
-      <div className="header__top">
-        <img src="https://1000logos.net/wp-content/uploads/2017/08/Airbnb-Logo.png" alt="Airbnb logo" className="header__logo" />
-        <div className="header__nav">
-          <div className="header__navItem">Places to stay</div>
-          <div className="header__navItem">Experiences</div>
-          <div className="header__navItem">Online Experiences</div>
-        </div>
-        <div className="header__right">
-          <div className="header__host">Become a Host</div>
-          <IconButton>
-            <Public />
-          </IconButton>
-          <IconButton>
-            <Menu />
-          </IconButton>
-          <IconButton>
-            <AccountCircle />
-          </IconButton>
+    <div className="header">
+      <img src="data:image/png;base64,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" className="header_logo" alt="logo" />
+
+      <div className="header_center">
+        <p>Places to Stay</p>
+        <p>Experiences</p>
+        <p>Online Experiences</p>
+      </div>
+      <div className="header_right">
+        <p>Become a host</p>
+        <LanguageIcon />
+        <div className="header_dropdowns">
+          <MenuIcon />
+          <Avatar />
         </div>
       </div>
-      <div className="header__search">
-        <select className="header__select">
-          <option>Hotels</option>
-          <option>Hotel 1</option>
-          <option>Hotel 2</option>
-        </select>
-        <input type="date" className="header__input" placeholder="Check in" />
-        <input type="date" className="header__input" placeholder="Check out" />
-        <input type="text" className="header__input" placeholder="Guests" />
-        <IconButton>
-          <Search style={{ color: '#ff385c' }} />
-        </IconButton>
-      </div>
-    </header>
+    </div>
   );
 };
 

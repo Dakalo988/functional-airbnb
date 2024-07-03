@@ -1,7 +1,12 @@
 import React from 'react';
 import Header from './components/Layout/Header';
-import Banner from './components/Banner';
+import Search from './components/Layout/Search';
 import Home from './components/Home';
+import Banner from './components/Banner';
+import Cards from './components/Cards';
+
+
+
 
 
 
@@ -10,9 +15,12 @@ import Home from './components/Home';
 const App = () => {
   return (
     <div className="app">
-      <Header />
-      <Banner/>
       <Home/>
+      <Header />
+      <Search/>
+     <Banner/>
+     <Cards/>
+      
      
     </div>
   );
