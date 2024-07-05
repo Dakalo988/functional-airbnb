@@ -1,0 +1,208 @@
+.inspiration-container {
+  width: 1440px;
+  padding: 96px 80px;
+  gap: 96px;
+  margin-left: 210px;
+  
+ 
+}
+
+.cards-section {
+  width: 1280px;
+  gap: 48px;
+}
+
+.cards-section h2 {
+  margin-bottom: 24px;
+}
+
+.cards-row {
+  display: flex;
+  gap: 24px;
+}
+
+.city-card {
+  width: 324px;
+  height: 444px;
+  border-radius: 8px 0 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.city-card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-info {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.sandton-city .card-info {
+  background-color: #D32F2F;
+}
+
+.joburg-city .card-info {
+  background-color: #7B1FA2;
+}
+
+.woodmead .card-info {
+  background-color: #0288D1;
+}
+
+.hyde-park .card-info {
+  background-color: #388E3C;
+}
+
+.discover-experiences {
+  width: 1280px;
+  gap: 48px;
+}
+
+.discover-experiences h2 {
+  margin-bottom: 24px;
+}
+
+.experiences-row {
+  display: flex;
+  gap: 24px;
+}
+
+.experience-image {
+  width: 628px;
+  height: 628px;
+  position: relative;
+  border-radius: 8px 0 0 0;
+}
+
+.experience-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 0 0 0;
+  object-fit: cover;
+}
+
+.experience-info {
+  position: absolute;
+  bottom: 80px;
+  left: 24px;
+  color: white;
+}
+
+.experience-info h3 {
+  margin: 0;
+}
+
+.experience-info button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+}
+
+.gift-cards-section {
+  width: 1280px;
+  gap: 48px;
+}
+
+.gift-cards-section h2 {
+  margin-bottom: 24px;
+}
+
+.gift-cards-content {
+  display: flex;
+  gap: 48px;
+}
+
+.left-content {
+  width: 377.78px;
+}
+
+.left-content p {
+  font-size: 24px;
+  margin: 0 0 24px 0;
+}
+
+.left-content button {
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.gift-cards-image {
+  width: 854.22px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.hosting-section {
+  width: 1280px;
+  height: 640px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+  border-radius: 8px 0 0 0;
+}
+
+.hosting-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px 0 0 0;
+}
+
+.hosting-content {
+  position: absolute;
+  bottom: 80px;
+  left: 24px;
+  color: white;
+}
+
+.hosting-content h3 {
+  margin: 0;
+}
+
+.hosting-content button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+}
+
+.pre-footer {
+  width: 1280px;
+  gap: 32px;
+}
+
+.pre-footer h2 {
+  margin-bottom: 24px;
+}
+
+.getaways-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.getaways-links a {
+  color: black;
+  text-decoration: none;
+}
+
+.getaways-links a:hover {
+  text-decoration: underline;
+}
