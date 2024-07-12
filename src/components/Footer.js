@@ -4,9 +4,9 @@ import './Footer.css';
 const Footer = () => {
   return (
     <div className="footer-container">
-      <div className="footer-sections">
+      <div className="footer-columns">
         <div className="footer-column">
-          <h4>Support</h4>
+          <h3>Support</h3>
           <ul>
             <li><a href="Home.js">Help Center</a></li>
             <li><a href="Home.js">Safety information</a></li>
@@ -17,7 +17,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-column">
-          <h4>Community</h4>
+          <h3>Community</h3>
           <ul>
             <li><a href="Home.js">Airbnb.org: disaster relief housing</a></li>
             <li><a href="Home.js">Support: Afghan refugees</a></li>
@@ -26,7 +26,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-column">
-          <h4>Hosting</h4>
+          <h3>Hosting</h3>
           <ul>
             <li><a href="Home.js">Try hosting</a></li>
             <li><a href="Home.js">AirCover: protection for Hosts</a></li>
@@ -36,7 +36,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-column">
-          <h4>About</h4>
+          <h3>About</h3>
           <ul>
             <li><a href="Home.js">Newsroom</a></li>
             <li><a href="Home.js">Learn about new features</a></li>
@@ -48,10 +48,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2024 Airbnb clone project, Inc. · <a href="Home.js">Privacy</a> · <a href="Home.js">Terms</a> · <a href="Home.js">Sitemap</a></p>
+        <p>© 2022 Airbnb, Inc. · <a href="Home.js">Privacy</a> · <a href="Home.js">Terms</a> · <a href="Home.js">Sitemap</a></p>
         <div className="footer-icons">
-          <a href="Home.js">English (US)</a>
-          <a href="Home.js">ZAR</a>
+          <span>English (US)</span> · <span>USD</span> ·
           <a href="Home.js"><i className="fab fa-facebook-f"></i></a>
           <a href="Home.js"><i className="fab fa-twitter"></i></a>
           <a href="Home.js"><i className="fab fa-instagram"></i></a>
@@ -59,6 +58,6 @@ const Footer = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Footer;

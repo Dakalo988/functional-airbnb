@@ -2,10 +2,15 @@ import React, { useState } from 'react';
 import './Search.css';
 import SearchIcon from "@mui/icons-material/Search";
 
-const SearchBar = () => {
+const Search = ({ onLocationSelect }) => {
   const [filters, setFilters] = useState({
     location: '',
+    checkInDate: '',
+    checkOutDate: '',
+    guests: 1
   });
+
+  console.log('Search component received props:', { onLocationSelect });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -13,6 +18,14 @@ const SearchBar = () => {
       ...prevFilters,
       [name]: value
     }));
+
+    if (name === 'location' && value === 'local') {
+      if (typeof onLocationSelect === 'function') {
+        onLocationSelect(value);
+      } else {
+        console.error('onLocationSelect is not a function');
+      }
+    }
   };
 
   const handleSearch = () => {
@@ -25,45 +38,56 @@ const SearchBar = () => {
       <div className="search-bar">
         <div className="search-section">
           <label>Hotels</label>
-          <input
-            type=""
+          <select
             name="location"
             value={filters.location}
             onChange={handleChange}
-            placeholder="Select Hotel"
-          />
-         
+          >
+            <option value="">Select Location</option>
+            <option value="local">Local</option>
+            <option value="local">All Location</option>
+            <option value="local">South africa</option>
+          </select>
         </div>
         <div className="search-section">
           <label>Check in</label>
           <input
-            type="text"
+            type="date"
             name="checkInDate"
-            placeholder="Add dates"
+            value={filters.checkInDate}
+            onChange={handleChange}
           />
         </div>
         <div className="search-section">
           <label>Check out</label>
           <input
-            type="text"
+            type="date"
             name="checkOutDate"
-            placeholder='Add dates'
+            value={filters.checkOutDate}
+            onChange={handleChange}
           />
         </div>
         <div className="search-section">
           <label>Guests</label>
-          <input
-            type="text"
+          <select
             name="guests"
-            placeholder="Add guests"
-          />
+            value={filters.guests}
+            onChange={handleChange}
+          >
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+            <option value="6">6 Guests</option>
+          </select>
         </div>
-        <div className='search_button'>
-        <SearchIcon />
+        <div className='search_button' onClick={handleSearch}>
+          <SearchIcon />
         </div>
       </div>
     </div>
   );
 };
 
-export default SearchBar;
+export default Search;

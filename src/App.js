@@ -1,37 +1,23 @@
 import React from 'react';
-import Header from './components/Layout/Header';
-import Search from './components/Layout/Search';
-import Home from './components/Home';
-import Banner from './components/Banner';
-import Inspiration from './components/Inspiration';
-import Footer from './components/Footer';
-
-
-
-
-
-
-
-
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LocalPage from './components/LocalPage.js';
+import ParentComponent from './components/ParentComponent.js';
+import PropertyList from './Pages/PropertyList.js';
+import Listing from './Listing/Listing.js'; // Make sure to import Listing component
 
 const App = () => {
   return (
     <div className="app">
-      <Home/>
-      <Header />
-      <Search/>
-     <Banner/>
-     <Inspiration/>
-     <Footer/>
-   
-   
-      
-     
+      <Router>
+        <Routes>
+          <Route path="/" element={<ParentComponent />}/>
+          <Route path="/local-page" element={<LocalPage/>}/>
+          <Route path="/PropertyList" element={<PropertyList/>}/>
+          <Route path="/listing/:name" element={<Listing/>}/> 
+        </Routes>
+      </Router>
     </div>
   );
 };
 
 export default App;
-
-
