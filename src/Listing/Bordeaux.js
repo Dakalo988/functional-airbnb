@@ -6,6 +6,9 @@ import CleanHandsIcon from "@mui/icons-material/CleanHands";
 import KeyIcon from "@mui/icons-material/VpnKey";
 import CancelIcon from "@mui/icons-material/Cancel";
 
+
+
+
 const Bordeaux = () => {
   const accommodationType = "Bordeaux Getaway";
   const starRating = 5.0;
@@ -83,6 +86,77 @@ const Bordeaux = () => {
           </p>
           <a href="#">Show more</a>
         </div>
+
+        {/* New Section 1: Where you'll sleep */}
+        <div className="sleep-section">
+          <h2>Where you'll sleep</h2>
+          <img src="https://s3-alpha-sig.figma.com/img/91d6/ccd9/96e5b436aa98cbfacf7fc152380f2a69?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RsCGmSkKk8UzH2rrjX~U01ZtdBdr0Wu-iczXliC94AdhK89mjc8CoxcoGfhEPMBPLfWowJLcbvjGQg1LyfTBL7isan4sGAmImP~ZBfxu6GBZI90yc8QShsNkAY8ZrDXFqGhOr-uBm8-fl30ijAo5G2oucYzdB~qsZ0Y-3zFF0N1BRxkfwFc9jRc50Wh-kwYlxNlam8V0GnGhR8GF~KeCHuZN3RcwRouiw18JKuhfTCwCjrRfGCGts3C0Y1Z8gYcn2oAvBPaL3ELhQUcblDZhj~krGZQyi9pIPZOjkAqqChyvtuU9FRPaAo4vgTKwtAQpMxm0l2XeSxH2zMWTmYCqXw__" alt="Bedroom" className="sleep-image" />
+          <div className="sleep-details">
+            <h3>Bedroom</h3>
+            <p>1 queen bed</p>
+          </div>
+        </div>
+
+        {/* New Section 2: What this place offers */}
+        <div className="amenities-section">
+          <h2>What this place offers</h2>
+          <div className="amenities-grid">
+            <div className="amenity-item"><span>🌳</span> Garden view</div>
+            <div className="amenity-item"><span>📶</span> Wifi</div>
+            <div className="amenity-item"><span>🧺</span> Free washer - in building</div>
+            <div className="amenity-item"><span>❄️</span> Central air conditioning</div>
+            <div className="amenity-item"><span>🧊</span> Refrigerator</div>
+            <div className="amenity-item"><span>🍽️</span> Kitchen</div>
+            <div className="amenity-item"><span>🐶</span> Pets allowed</div>
+            <div className="amenity-item"><span>🔥</span> Dryer</div>
+            <div className="amenity-item"><span>📹</span> Security cameras on property</div>
+            <div className="amenity-item"><span>🚴‍♂️</span> Bicycles</div>
+          </div>
+          <button className="show-all-button">Show all 37 amenities</button>
+        </div>
+
+        {/* New Section 3: Static Calendar */}
+        <div className="calendar-section">
+          <h2>7 nights in New York</h2>
+          <p>Feb 19, 2022 - Feb 26, 2022</p>
+          <div className="calendar">
+            <div className="month">
+              <h3>February 2022</h3>
+              <div className="weekdays">
+                <span>Su</span>
+                <span>Mo</span>
+                <span>Tu</span>
+                <span>We</span>
+                <span>Th</span>
+                <span>Fr</span>
+                <span>Sa</span>
+              </div>
+              <div className="days">
+                {Array.from({ length: 28 }, (_, i) => (
+                  <span key={i} className={i >= 18 ? "active" : ""}>{i + 1}</span>
+                ))}
+              </div>
+            </div>
+            <div className="month">
+              <h3>March 2022</h3>
+              <div className="weekdays">
+                <span>Su</span>
+                <span>Mo</span>
+                <span>Tu</span>
+                <span>We</span>
+                <span>Th</span>
+                <span>Fr</span>
+                <span>Sa</span>
+              </div>
+              <div className="days">
+                {Array.from({ length: 31 }, (_, i) => (
+                  <span key={i} className={i < 10 ? "active" : ""}>{i + 1}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+          <button className="clear-dates-button">Clear dates</button>
+        </div>
       </div>
       <div className="reservation-card">
         <div className="price-info">
@@ -120,4 +194,6 @@ const Bordeaux = () => {
   );
 };
 
-export default Bordeaux;
+
+
+export default Bordeaux
