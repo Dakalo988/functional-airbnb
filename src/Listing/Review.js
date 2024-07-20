@@ -101,7 +101,7 @@ const Review = () => {
               <h3>{review.name}</h3>
               <p>{review.date}</p>
               <p>{review.comment}</p>
-              {review.comment.length > 100 && <a href="#">Show more</a>}
+              {review.comment.length > 100 && <a href="Home.js">Show more</a>}
             </div>
           </div>
         ))}

@@ -56,7 +56,7 @@ const AboutHost = () => {
           <div className="health-safety">
             <h4>Health & safety</h4>
             <ul>
-              <li><CleanHandsIcon /> Committed to Airbnb's enhanced cleaning process. <a href="#">Show more</a></li>
+              <li><CleanHandsIcon /> Committed to Airbnb's enhanced cleaning process. <a href="Home.js">Show more</a></li>
               <li><VerifiedUserIcon /> Airbnb's social-distancing and other COVID-19-related guidelines apply</li>
               <li><ReportProblemIcon /> Carbon monoxide alarm</li>
               <li><ReportProblemIcon /> Smoke alarm</li>
@@ -66,7 +66,7 @@ const AboutHost = () => {
           <div className="cancellation-policy">
             <h4>Cancellation policy</h4>
             <p>Free cancellation before Feb 14</p>
-            <a href="#">Show more</a>
+            <a href="Home.js">Show more</a>
           </div>
         </div>
       </div>

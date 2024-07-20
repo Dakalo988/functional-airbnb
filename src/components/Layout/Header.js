@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import LanguageIcon from "@mui/icons-material/Language";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Avatar } from "@mui/material";
@@ -7,9 +7,14 @@ import "./Header.css";
 
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
+  };
+
+  const handleLoginClick = () => {
+    navigate('/Login');
   };
 
   return (
@@ -30,9 +35,7 @@ const Header = () => {
             <Avatar onClick={toggleDropdown} />
             {dropdownOpen && (
               <div className="dropdown-content">
-                <Link to="/Login">
-                  <span>Login</span>
-                </Link>
+                <span onClick={handleLoginClick}>Login</span>
               </div>
             )}
           </div>

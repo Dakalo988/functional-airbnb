@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .banner-container {
   display: flex;
   justify-content: center;

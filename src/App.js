@@ -4,18 +4,27 @@ import LocalPage from './components/LocalPage.js';
 import ParentComponent from './components/ParentComponent.js';
 import PropertyList from './Pages/PropertyList.js';
 import Listing from './Listing/Listing.js'; 
-import Login from "./components/Layout/Login.js";
+import Reserve from './Listing/Reserve.js';
+import CreateListing from './components/Admindash/CreateListing.js';
+import Viewlist from './components/Admindash/Viewlist.js';
+
+
+
+
 
 const App = () => {
   return (
     <div className="app">
       <Router>
         <Routes>
-          <Route path="/ParentComponent" element={<ParentComponent />}/>
+          <Route path="/" element={<ParentComponent />}/>
           <Route path="/local-page" element={<LocalPage/>}/>
-          <Route path="/PropertyList" element={<PropertyList/>}/>
-          <Route path="/listing/:name" element={<Listing/>}/> 
-          <Route path="/Login" element={<Login/>} />
+          <Route path="/PropertyList" element={<PropertyList/>} />
+          <Route path="/listing/:name" element={<Listing/>} /> 
+          <Route path="/reserve" element={<Reserve/>} />
+          <Route path="/create-listing" element={<CreateListing />} />
+          <Route path="/Viewlist" element={<Viewlist />} />
+          
         </Routes>
       </Router>
     </div>
