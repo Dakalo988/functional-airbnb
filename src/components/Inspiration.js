@@ -44,7 +44,7 @@ const Inspiration = () => {
         <h2>Discover Airbnb Experiences</h2>
         <div className="experiences-row">
           <div className="experience-image trip">
-            <img src="https://s3-alpha-sig.figma.com/img/3679/a298/196b41cd98272a64e19b9681beb746f0?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=USUFt7RFGCxZFzXT7ak8kw8iybjikbgLauotqnRCfOdbgGJnAeY8QOK-mV-4DWVV1K9pGt0JZLm~EOdlzeOKdj~T1yymUoFt4I-umCNVfPgDXJHqIO6LC19-9nxFx260ATiTtFNUr1x6-ySktziWnQRF~9di6GfHF7aLhibnBMhvH7DWO0bkbkKnKIHJROUOFe0g7UuAvkmrO5CL4fgHuveSyJ-SK3bbWvq2fEIA7kRPDuXPmrTeH7Brv0HcW5N0v5xe~17nT~Ux6TwZRp8hlwJ06LPx6woPEf0vWgsEPY1xwtsdbhCPqQZAWdsACjGoiwC68uvevcwiu9Dh3zi6lg__" alt="Things to do on your trip" />
+            <img src="https://s3-alpha-sig.figma.com/img/3679/a298/196b41cd98272a64e19b9681beb746f0?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qnrK7UtuaDie8ftANhybc0HvdU3U5FMmihEsUmdnNqJ3okHc53YlGVvlgNyitZFwmRUM3IEnvaOGMAa2gisJIXDy1MfysdZAp2Y5C~yOhtEhYtIWHM1sVEveT~Z5Lw638egE35fic1PtsyiMI09-r1Qo7FCMTLC6JAmWpcv3TwNa7An35Ros0Ciw0Jjs9LZ5gbP77ltksyWtROtHqBn~00S5uPSVk4ue78Z4uAqsmyke8-kDTUtgn7lSGUp5D8KB6m5pzMLLvdm1yyWXIEiuJvVwnVEAiCBvgn9~eW2fz~igXMt9yCP~eFLqC-UAil0RYx6nuGKC4TE23QkDEU6LYQ__" alt="Things to do on your trip" />
             <div className="experience-info">
               <h3>Things to do on your trip</h3>
               <button>Experiences</button>
@@ -67,13 +67,13 @@ const Inspiration = () => {
             <p>Shop Airbnb gift cards</p>
             <button>Learn more</button>
           </div>
-          <img src="https://s3-alpha-sig.figma.com/img/43b8/8762/e0a70df6eb554b492d0b7d2633a1ecb1?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oUj~mgbRJOAn-Y~cSQ5nAaD4BFQ~xUFzEIk~GNI7amFNHrqSW~9wCrrflUQjhdiYQwvejAQp4JdjYWoyRAYVaZXBvbwkPLyFq-YUr-3aKUnhoLvkFm077TKbuaHEg2KL0HwuSege8outJs84E9IOX-4LmRoejCA-Kgt3OrXKqvaHG6M550gll5fUCkqL5AwK517tZa8Fr0hMCHmwd8Z-2EG3C~mRHIY6sQt-MH0zNdBawO9zk-HPY81G~Ynd60rk6DXsmmtEJ7qivgr8M80gteiB0RVuVrBzAcEOuShjx-tUYfC5Yi~eZsrvgf-xULQNorSkGaUL0oDHLMFOtD03AQ__" alt="Airbnb gift cards" className="gift-cards-image"/>
+          <img src="https://s3-alpha-sig.figma.com/img/43b8/8762/e0a70df6eb554b492d0b7d2633a1ecb1?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pKJ16ZzvXzGx3j2tK9vLkkXQj48-pCEcnLGZbjFdQYAQonOCKcdIQRQ6vaJGSlI~skWTDQtCYlK~JPEKLus6q6h4QsNKU0R1npAnEYbB2qnA2a-Aiz~BWB8fApfq3nosFNI8yuKz0LAx3rQ8CbJyBE6l54TdqwjTTkvVAjwohO6inMnnKlldGpvBzXGvkidrAkWk6jQkmbBjUJ6OteGALLoUjK-ZkNgM1tUQx0DPuxS~WWzxOkkMRJtrPEckMI4kgJc6~42JnUGraIIYIUD8~F4eKPQNsc-CzrAd~AJ8lp6FaxcfTSxkqs0S4dkbtPhsAhS47ygOjetFv7dK-x-E5A__" alt="Airbnb gift cards" className="gift-cards-image"/>
         </div>
       </div>
 
       {/* Section 4: Questions about Hosting */}
       <div className="hosting-section">
-        <img src="https://s3-alpha-sig.figma.com/img/5ed8/a779/efd4d7b308f8c6bdd6b801b638cc68d2?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OAAISHTvKj1vizWZn3NY2t6m715640Crb7-s-BgY0jWiJN1v9hv2JYuPJ2kD~vteCtk4Z7nZEHA7cz5DU0SlITCs9oT5fr1Qpf-DZspn5lgcoVK0w3jZGXlk34VZ5U134VAw3IFI9vUz-IMGLyU3gtXz-aez549Uf4gbOFR~Tjg4I0MHrGdidN1NPA53KQq23pBxDTXWMuCbA7RBj~wkefE9SgGP89-nfPM-BPqfxPpTjE9jDJC7h83RKL1769sdd3yo67QdwsJPlfmdO8FIQYftXDX1HRCe6Zp-2vLnQ3tqBvAnvbW2PuU~DNZUgrDgZ8fVnWBzSFtBcZYkIuN0uw__" alt="Questions about hosting?" />
+        <img src="https://s3-alpha-sig.figma.com/img/5ed8/a779/efd4d7b308f8c6bdd6b801b638cc68d2?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IRRwaAu5h~gqDZyuA-PmidzXGj-jMcZWi-XvcpcV2RVvQWPf9dz4TJamzjy-zAxAfQx6U56AlkZF3qoYpw~RzzmIJ5jibAxXSK2Ccw0s1wWGEpJibSsO6nZ6DS8OJpAIEjh8haNFc~jngKzBSejQXfrgmCt30t9G1OZQOndb~hmdLdjeyxA2JqsqcyZms53ufLJxWZk3KXsRtMhRWL4SxfThqyYPxf23EEK4O38xkJYjWaVipR2PLlhswfpSjLCCg0~4FcHkw3z-gyIOiYtWOxhh1aSZmSs5FTxqPDYof5yVnL43Ibe5bsu~YKswTE-I6Aoz58Ghbk5K63s0tnkDgw__" alt="Questions about hosting?" />
         <div className="hosting-content">
           <h4>Questions about hosting?</h4>
           <button>Ask a Superhost</button>

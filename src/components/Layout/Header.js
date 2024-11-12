@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <div className="header">
-      <img src="" className="header_logo" alt="logo" />
+      <img src="http://pluspng.com/img-png/airbnb-logo-png-airbnb-logo-white-on-black-1600.png" className="header_logo" alt="logo" />
 
       <div className="header_center">
         <p>Places to Stay</p>
